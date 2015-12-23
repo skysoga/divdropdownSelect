@@ -1,0 +1,46 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>div模拟下拉菜单特效 - 在线演示 www.divcss5.com</title>
+<link href="style/divselect.css" type="text/css" rel="stylesheet"/>
+<script src="javascript/jquery-1.9.1.min.js" type="text/javascript"></script>
+<script type="text/javascript" src="javascript/divselect.js"></script>
+<style >
+	.divselect{margin:120px auto;}
+</style>
+</head>
+<body>
+<form action="" method="post">
+
+ <div class="divselect" id="divselect1">
+      <cite>请选择特效分类</cite>
+      <ul>
+         <li><a href="javascript:;" selectid="1"><img src="file:///E|/1.插件/纯div模仿select/images/xjt.png" /></a></li>
+         <li><a href="javascript:;" selectid="2">下拉select效果</a></li>
+         <li><a href="javascript:;" selectid="3">select模拟</a></li>
+         <li><a href="javascript:;" selectid="4">DIVCSS5特效</a></li>
+      </ul>
+   <input name="" type="hidden" value=""  id="inputselect1"/>
+  </div>  
+ <div class="divselect" id="divselect2">
+      <cite>请选择特效分类</cite>
+      <ul>
+         <li><a href="javascript:;" selectid="1"><img src="file:///E|/1.插件/纯div模仿select/images/xjt.png" /></a></li>
+         <li><a href="javascript:;" selectid="2">下拉select效果</a></li>
+         <li><a href="javascript:;" selectid="3">select模拟</a></li>
+         <li><a href="javascript:;" selectid="4">DIVCSS5特效</a></li>
+      </ul>
+   <input name="" type="hidden" value="" id="inputselect2"/>
+  </div> 
+</form>
+<script type="text/javascript">
+	$(document).ready(function(){
+		var id1 = $("#divselect1").hello();
+		id1.show(1);//默认block
+		var id2 = $("#divselect2").hello();
+		id2.show(2);//滑动效果
+	});
+</script>
+</body>
+</html>
